@@ -1,4 +1,1 @@
-{
-    "version": 2,
-    "builds": [{
-                "src": "server.js", // Your main server file "use": "@vercel/node" // Vercel's Node.js builder } ], "routes": [ { "src": "/socket.io/(.*)", // Ensure Socket.IO paths are handled by the server "dest": "server.js" }, { "src": "/api/(.*)", // Route API calls to your server "dest": "server.js" }, { "src": "/(.*)", // Route all other requests to your server "dest": "server.js" } ] }
+{ "version": 2, "builds": [ { "src": "server.js", // Your main server file "use": "@vercel/node" // Vercel's Node.js builder } ], "routes": [ { "src": "/socket.io/(.*)", // Ensure Socket.IO paths are handled by the server "dest": "server.js" }, { "src": "/api/(.*)", // Route API calls to your server "dest": "server.js" }, { "src": "/(.*)", // Route all other requests to your server "dest": "server.js" } ] }
